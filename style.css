@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80%;
+    width: 30%;
+    background-color: #000;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid aqua;
+}
+.heading{
+    color: aqua;
+    margin-top: 20px;
+    
+}
+.heading h1{
+    font-weight: 70px;
+}
+.input{
+    width: 100%;
+    height: 10%;
+    /* background-color: antiquewhite; */
+    margin-top: 15px;
+    padding-left: 20px;
+   
+}
+.input input{
+    padding: 10px;
+    width: 70%;
+    height: 80%;
+    color: grey;
+    background-color: #000;
+    border-radius: 20px 0 0 20px;;
+    border: 2px solid grey;
+    border-right: 0;
+    outline: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 3px;
+    
+    
+}
+input ::placeholder{
+    /* padding-left: 10px; */
+}
+.input button{
+    background-color: aqua;
+    color: #000;
+    border-radius: 20px 20px 20px 0;;
+    width: 20%;
+    height: 80%;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    
+    
+    
+}
+.task{
+    /* background-color: aliceblue; */
+    width: 90%;
+    margin-top: 20px;
+}
+.task li{
+    width: 95%;
+    height: 38px;
+    background-color: rgba(99, 95, 95, 0.381);
+    border-radius: 10px;
+    color: #ffffffac;
+    list-style: none;
+    margin-top: 10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+/* Style for round checkboxes */
+#checkbox {
+    width: 15px;
+    height: 15px;
+    appearance: none; /* Remove default checkbox styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid aqua; /* Aqua border for the circle */
+    border-radius: 50%; /* Make it a circle */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Checked state style */
+  #checkbox:checked {
+    background-color: aqua; /* Aqua fill when checked */
+    border-color: aqua; /* Border remains aqua */
+  }
+  
+  #checkbox:checked::after {
+    content: '✔'; /* Tick mark */
+    color: white; /* Tick mark color */
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+i{
+    font-size: 20px;
+    background-color: #000;
+    color: aqua;
+    border: none;
+}

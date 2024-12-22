@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
-    <h1>Todo App</h1>
-    <input type="text" placeholder="Enter Your Task"><button>Add Task</button>
-    <ul>
-        <li>go for walk <button class="cancel">cancel</button></li>
-        <li>Exercise <button class="cancel">cancel</button></li> 
-    </ul>
+    <div class="container">
+        <div class="heading">
+            <h1>TODO APP</h1>
+        </div>
+       
+      <div class="input"><input type="text" placeholder="Enter Your Task" ><button>ADD</button></div>  
+        <div class="task">
+            <ul>
+          <li><input type="checkbox" name="" id="checkbox"> go for walk <button class="cancel"><i class="ri-delete-bin-6-line"></i></button></li>
+          <li><input type="checkbox" name="" id="checkbox"> Exercise <button class="cancel"><i class="ri-delete-bin-6-line"></i></button></li> 
+            </ul>
+        </div>
+    </div>
+   
     <script src="app.js"></script>
 </body>
 </html>
