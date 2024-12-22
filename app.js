@@ -4,21 +4,33 @@ let ul=document.querySelector("ul")
 
 
 btn.addEventListener("click", function(){
-  let item=document.createElement("li")
-  item.innerText=inp.value
-  inp.value=""
-  ul.appendChild(item);
+  if (inp.value.trim() !== "") {
 
-  let btn=document.createElement("button")
-  btn.innerHTML=`<i class="ri-delete-bin-6-line"></i>`
-btn.classList.add("cancel")
-item.appendChild(btn)
+
+    let task = inp.value.trim();
+
+    // Create a new list item
+    let item = document.createElement("li");
+ 
 
 
   // Add the task text with a checkbox
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  checkbox.id = "checkbox";
   item.appendChild(checkbox);
+
+  inp.value=""
+  ul.appendChild(item);
+  let taskText = document.createTextNode(" " + task); // Add space for better readability
+  item.appendChild(taskText);
+
+  let btn=document.createElement("button")
+  btn.innerHTML=`<i class="ri-delete-bin-6-line"></i>`
+btn.classList.add("cancel")
+item.appendChild(btn)
+  }
+
 })
 
 
